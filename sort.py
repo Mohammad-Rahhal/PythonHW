@@ -6,5 +6,5 @@ def sort_list(myList):
                              temp = myList[j]
                              myList[j] = myList[j+1]
                              myList[j+1] = temp
-     print(myList)
+     return myList
 
