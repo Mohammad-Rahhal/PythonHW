@@ -10,7 +10,7 @@ for word in data_into_list:
      else:
          word_counter[word] = 1
 popular_words = sorted(word_counter, key = word_counter.get, reverse = True)
-print(f'\n{popular_words[0]}: { x[popular_words[0]]}')
+print(f'\r{popular_words[0]}: { x[popular_words[0]]}')
 print(f'{popular_words[1]}: { x[popular_words[1]]}')
 print(f'{popular_words[2]}: { x[popular_words[2]]}')
 print(f'{popular_words[3]}: { x[popular_words[3]]}')
