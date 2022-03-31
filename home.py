@@ -12,7 +12,7 @@ def home():
     </head>
     <body>
         <h1>Welcome '''  + name + '''!</h1>
-	<a href={{url_for("www.google.com")}}> not google </a> <br/> 
+	<a href=("www.google.com")> not google </a> <br/> 
 	<br/>
 		<ul>
 		<li> ''' +  city_names[0] + '''</li> 
