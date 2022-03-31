@@ -1,0 +1,34 @@
+    <html>
+	{% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %} 
+    <head>
+        <title>Home Page - my blog</title>
+    </head>
+    <body>
+        <h1>Welcome {{name}} </h1>
+        <a href="www.google.com"> not google </a> <br/>
+        <br/>
+                <ul>
+		{% for i in city_names %}
+               		<li> {{i}} </li>
+		{% endfor %}</ul>
+{% block content %}
+	<form action="" method="post" novalidate>
+	{{form.hidden_tag()}}
+		<p>
+			{{form.City_Name.label}}<br>
+			{{form.City_Name(size=32)}}
+		</p>
+		<p>
+			{{form.submit()}} </p> 
+	</form>
+{% endblock %}
+                
+    </body>
