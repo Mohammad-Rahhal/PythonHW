@@ -1,4 +1,4 @@
-from app import myapp_obj
+from app import myobj
 from flask import render_template, flash, request
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, BooleanField, SubmitField
@@ -8,7 +8,7 @@ class LoginForm(FlaskForm):
 	submit = SubmitField('Submit')
 name = "Lisa"
 city_names = ["Paris", "Rome", "London", "Tahiti"]
-@myapp_obj.route("/", methods = ['POST' , 'GET'])
+@myobj.route("/", methods = ['POST' , 'GET'])
 def home():
 	form = LoginForm()
 	if request.method == 'POST':
